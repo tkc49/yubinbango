@@ -23,7 +23,7 @@ if ( !class_exists('WPCF7')) {
 
 define( 'YUBINBANGO_URL',  plugins_url( '', __FILE__ ) );
 
-function load_js(){
+function enqueue_scripts(){
 
     wp_enqueue_script(
         'yubinbango',
@@ -32,7 +32,7 @@ function load_js(){
     );
 
 }
-add_action( 'wpcf7_load_js', '\yubinbango\load_js' );
+add_action( 'wpcf7_enqueue_scripts', '\yubinbango\enqueue_scripts' );
 
 
 function form_class_attr($class){
