@@ -1,41 +1,37 @@
 === Yubinbango ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://example.com/
-Tags: comments, spam
+Contributors: tkc49
+Donate link:
+Tags: Contact Form 7, postalcode, zipcode, yubinbango
 Requires at least: 4.5
 Tested up to: 4.9.8
 Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+This Plugin can display the address automatically from the postal code.
+
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+This plugin is add-on for Contact form 7.
+This Plugin can display the address automatically from the postal code.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+1. You need add `class:p-postal-code`.
+Example:
+`[text* your-zip class:zip class:p-postal-code maxlength:7 placeholder "1100008"]`
 
-A few notes about the sections above:
+2. You need add `class:p-region`
+Example:
+`[select* your-pref default:13 class:pref class:p-region "北海道" "青森県" "岩手県" "宮城県" "秋田県" "山形県" "福島県" "茨城県" "栃木県" "群馬県" "埼玉県" "千葉県" "東京都" "神奈川県" "新潟県" "富山県" "石川県" "福井県" "山梨県" "長野県" "岐阜県" "静岡県" "愛知県" "三重県" "滋賀県" "京都府" "大阪府" "兵庫県" "奈良県" "和歌山県" "鳥取県" "島根県" "岡山県" "広島県" "山口県" "徳島県" "香川県" "愛媛県" "高知県" "福岡県" "佐賀県" "長崎県" "熊本県" "大分県" "宮崎県" "鹿児島県" "沖縄県"]`
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+3. You need add `class:p-locality`
+Example:
+`[text* your-city class:city class:p-locality placeholder "台東区池之端"]`
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+4. You need add `class:p-street-address`
+Example:
+`[text* your-address-else class:address-else class:p-street-address]`
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
 
 == Installation ==
 
@@ -43,72 +39,20 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+1. Upload the entire `yubinbango` folder to the `/ wp-content / plugins /` directory.
+2. Write an equation for the confirmatory reaction of each cation and anion based on the experimental results of Operation
+3. Activate the plugin through the 'Plugins' menu in WordPress
+
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. screenshot-1.png
+2. screenshot-2.gif
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+= 1.0.0 =
+* First Release.
