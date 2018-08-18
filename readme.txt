@@ -4,6 +4,7 @@ Donate link:
 Tags: Contact Form 7, postalcode, zipcode, yubinbango
 Requires at least: 4.5
 Tested up to: 4.9.8
+Requires PHP: 7.0.0
 Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
