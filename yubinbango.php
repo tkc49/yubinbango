@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Yubinbango
  * Plugin URI:
- * Description:
+ * Description:     This Plugin can display the address automatically from the postal code.
  * Author:          Takashi Hosoya
  * Author URI:      https://takashihosoya.ninja/
  * Text Domain:     yubinbango
